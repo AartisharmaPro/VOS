@@ -4,10 +4,6 @@
 
 OSVOS is a method that tackles the task of semi-supervised video object segmentation. It is based on a fully-convolutional neural network architecture that is able to successively transfer generic semantic information, learned on ImageNet, to the task of foreground segmentation, and finally to learning the appearance of a single annotated object of the test sequence (hence one-shot). Experiments on DAVIS 2019 show that OSVOS is faster than currently available techniques and improves the state of the art by a significant margin (79.8% vs 68.0%).
 
-![OSVOS](doc/ims/osvos.png)
-
-This TensorFlow code is a posteriori implementation of OSVOS and it does not contain the boundary snapping branch. The results published in the paper were obtained using the Caffe version that can be found at [OSVOS-caffe](https://github.com/kmaninis/OSVOS-caffe).
-
 ### Expected Output with DAVIS 2019 Test-Dev Dataset with the first frame annotated (Overlay code Not included)
 
 ![OSVOS](doc/ims/output.png)
@@ -44,6 +40,4 @@ It is possible to work with all sequences of DAVIS 2016 just by creating a soft 
 
 Have a happy training!
 
-If you encounter any problems with the code, want to report bugs, etc. please contact me at `xmandsi@gmail.com`
 
-Check our [project page](http://www.vision.ee.ethz.ch/~cvlsegmentation/osvos) for additional information.
